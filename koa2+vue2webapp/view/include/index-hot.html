@@ -1,0 +1,25 @@
+<section class="channel-h5">
+	<div class="channel-h5_header">
+		<p class="channel-h5_title">本周最火</p>
+	</div>
+	<ul class="list-h5">
+		<li v-for="item in hot">
+			<div class="book-h5">
+				<a :href="'/book?id='+ item.fiction_id">
+					<div class="book-h5_cover">
+						<img  v-bind:src="item.cover">
+						<p class="book-h5_finish">完结</p>
+					</div>
+					<div class="book-h5_info">
+						<p class="book-h5_title">{{ item.title }}</p>
+						<p class="book-h5_author">{{ item.authors }}</p>
+						<p class="book-h5_summary">{{ item.summary }}</p>
+						<div class="book-h5_wrap">
+							<div class="book-h5_tag" v-for="tag in item.tags">{{ tag }}</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+	</ul>
+</section>
