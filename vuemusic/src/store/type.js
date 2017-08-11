@@ -1,0 +1,8 @@
+export const SHOWLOADING='SHOWLOADING'
+export const HIDELOADING='HIDELOADING'
+export const ISSHOWTAB='ISSHOWTAB'
+export const ISSHOWTABSHOW='ISSHOWTABSHOW'
+export const ISBACK='ISBACK'
+export const ISBACKFALSE='ISBACKFALSE'
+export const SRCID='SRCID'
+export const AUDIOSHOW='AUDIOSHOW'

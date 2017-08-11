@@ -1,0 +1,44 @@
+import * as type from './type'
+ 
+export default{
+	showloading:({commit})=>{
+		commit(type.SHOWLOADING)
+	},
+	hideloading:({commit})=>{
+		commit(type.HIDELOADING)
+	},
+	isback:({commit})=>{
+		commit(type.ISBACK);
+	},
+	isbackfalse:({commit})=>{
+		commit(type.ISBACKFALSE);
+	},
+	isshowsearch:({commit})=>{
+		commit(type.ISSHOWSEARCH)
+	},
+	isshowsearchshow:({commit})=>{
+		commit(type.ISSHOWSEARCHSHOW)
+	},
+	audioshow:({commit})=>{
+		commit(type.AUDIOSHOW);
+	},
+	srcid:({commit},param)=>{
+		commit(type.SRCID,param);
+	},
+	isplaying:({commit})=>{
+		commit(type.ISPLAYING);
+	},
+	noplaying:({commit})=>{
+		commit(type.NOPLAYING);
+	},
+	getcollect:({commit},param)=>{
+		console.log(param)
+		commit(type.GETCOLLECT,param);
+	},
+	clear:({commit})=>{
+		commit(type.CLEAR);
+	},
+	isshowcollect:({commit})=>{
+		commit(type.ISSHOWCOLLECT);
+	},
+}
